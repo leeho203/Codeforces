@@ -12,7 +12,9 @@ public class Main {
 		for (int i = 0; i < str1.length(); i++)
 			if (str1.charAt(i) != str2.charAt(i))
 				notEqual++;
-
+		
+		// 다른 비트수가 짝수이면 str1과 str2와의 해밍거리가 같은 특정 str을 구할 수 있으나 
+		// 다른 비트수가 홀수이면 구할 수 없다
 		if (notEqual % 2 == 0) {
 			halfCnt = notEqual / 2;
 			int idx = 1;
