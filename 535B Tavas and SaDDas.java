@@ -3,18 +3,14 @@ import java.io.*;
 
 public class Main {
 	static long[] arr;
-	static int k;
 
 	public static void main(String args[]) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		long lNum = Long.parseLong(br.readLine());
 		arr = new long[1023];
-
-		k = 1;
-		dfs(4, k);
-		k = 2;
-		dfs(7, k);
+		
+		dfs(0, 0);
 
 		HashMap<Long, Integer> map = new HashMap<Long, Integer>();
 		for (int i = 1; i < arr.length; i++)
